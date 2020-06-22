@@ -1,0 +1,27 @@
+{
+  "answer": [
+    {
+      "id": 1,
+      "answer": "damage_not_found"
+    },
+        {
+      "id": 2,
+      "answer": "damage_scratch"
+    },
+        {
+      "id": 3,
+      "answer": "damage_dent"
+    },
+        {
+      "id": 4,
+      "answer": "damage_deformation"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+
+
+
+
