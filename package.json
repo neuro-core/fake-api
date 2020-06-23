@@ -4,7 +4,14 @@
   "description": "Some fake apis for debug and dev",
   "main": "index.js",
   "scripts": {
-    "api-now": "api-now -p 27300 -w db.json"
+    "api-now": "api-now -p 27300 -w db.json",
+    "start": "pm2 start server.js --name fake-api --watch --max-memory-restart 200M",
+    "stop": "pm2 stop fake-api",
+    "debug": "nodemon server.js",
+    "init": "cp .env-sample .env",
+    "debug-web": "npm-run-all -p nodemon browser-sync",
+    "nodemon": "nodemon",
+    "browser-sync": "browser-sync start --config bs-config.js"
   },
   "repository": {
     "type": "git",
